@@ -1,11 +1,13 @@
-// import logo from './logo.svg';
 import './stylesheet/App.css';
 import { Route, Routes } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+
 import Homepage from './pages/Homepage';
 import CreatePage from './pages/CreatePage';
 import NavBar from './components/NavBar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (

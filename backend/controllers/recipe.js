@@ -12,6 +12,7 @@ export const getRecipes = async (req, res) => {
 };
 
 export const createRecipe = async (req, res) => {
+    console.log("Incoming request body:", req.body);
     const recipe = req.body; // Data to-be-sent to DB
 
     if (!recipe.title || !recipe.steps || !recipe.photo) {
@@ -22,6 +23,7 @@ export const createRecipe = async (req, res) => {
 
     try {
         await newRecipe.save();
+        console.log("Recipe saved successfully:", newRecipe);
         res.status(201).json({ success: true, data: newRecipe});
     } catch (error) {
         console.error("Error in writing recipe: ", error.message);

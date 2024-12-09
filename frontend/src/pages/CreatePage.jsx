@@ -55,7 +55,7 @@ const CreatePage = () => {
           />
         </div>
 
-        <button type="submit" class="btn btn-primary" onClick={handleRecipeAdd}>
+        <button type="submit" class="btn btn-primary" onClick={handleRecipeAdd} w="full">
           Finish Writing
         </button>
       
