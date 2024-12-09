@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* CSS Styling for Pages*/
+/* To deal with NavBar Blocking*/
+html, body { 
+  background-color: #f8f8f8;
+  margin-top: 50px;
+  padding-top: 10px;
+}
